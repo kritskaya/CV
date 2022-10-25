@@ -1,0 +1,307 @@
+:root {
+  --base-color1: #ffcc00;
+  --base-color2: #04c2c9;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+  background-color: #000;
+}
+
+section {
+  padding: 25px 50px;
+}
+
+.section-header {
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+}
+
+.container {
+  display: flex;
+  max-width: 1280px;
+  margin: 0 auto;
+  overflow: hidden;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
+  border-top: 60px solid #000;
+  border-bottom: 60px solid #000;
+}
+
+.header {
+  background-color: var(--base-color1);
+}
+
+.burger {
+  display: none;
+  width: 30px;
+  height: 26px;
+}
+
+.burger__line {
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+}
+
+.nav {
+  background-color: var(--base-color1);
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__close-btn {
+  display: none;
+}
+
+.nav__link {
+  display: block;
+  padding: 8px 10px;
+  color: #fff;
+  transition: 0.3s color;
+}
+
+.nav__link:hover {
+  color: #000;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.hero::after {
+  position: absolute;
+  content: '';
+  top: -140px;
+  right: -80px;
+  width: 530px;
+  height: 530px;
+  border-radius: 50%;
+  background-color: var(--base-color1);
+  z-index: -1;
+}
+
+.hero__intro {
+  margin-bottom: 20px;
+  font-size: 46px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.hero__name {
+  max-width: 470px;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 90px;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
+
+.hero__description {
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  color: var(--base-color1);
+}
+
+.hero__photo {
+  display: flex;
+  width: 280px;
+  height: 280px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid #000;
+}
+
+.hero__img {
+  width: 240px;
+  border-radius: 50%;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.7);
+}
+
+.hero__contacts {
+  align-self: center;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contacts__item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.contacts__img {
+  width: 30px;
+  margin-left: 5px;
+}
+
+.contacts__link,
+.contacts__text {
+  font-size: 18px;
+  color: #000;
+}
+
+.footer {
+  padding: 8px 50px;
+  background-color: var(--base-color1);
+}
+
+.education__list {
+  border-left: 4px solid #000;
+}
+
+.education__list:last-child {
+  margin-top: 20px;
+}
+
+.education__item {
+  display: flex;
+  margin-left: -17px;
+  padding: 20px 10px;
+  align-items: center;
+  gap: 10px;
+}
+
+.education__item::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.education__year {
+  width: 140px;
+}
+
+.education__description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+}
+
+.education__link {
+  padding: 2px 10px;
+  border-radius: 5px;
+  background-color: var(--base-color1);
+}
+
+.language__item {
+  display: flex;
+  align-items: center;
+}
+
+.language__name {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.language__img {
+  width: 300px;
+}
+
+.technologies__list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  row-gap: 60px;
+}
+
+.technologies__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.technologies__img {
+  width: 100px;
+}
+
+.projects__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.projects__item {
+  display: flex;
+  width: 780px;
+  padding: 30px;
+  border-radius: 4px;
+  gap: 20px;
+  background-color: #f2f2f2;
+}
+
+.projects__img {
+  width: 400px;
+  height: 250px;
+  border-radius: 4px;
+  justify-self: end;
+  object-fit: cover;
+  transition: 0.5s transform;
+}
+
+.projects__img:hover {
+  transform: scale(105%);
+}
+
+.projects__name {
+  margin-bottom: 15px;
+}
+
+.projects__technologies {
+  margin-bottom: 10px;
+}
+
+.projects__description {
+  margin-bottom: 20px;
+}
+
+.projects__links {
+  display: flex;
+  gap: 15px;
+}
+
+.projects__link {
+  display: block;
+  width: 100px;
+  padding: 10px 20px;
+  border: 2px solid var(--base-color1);
+  font-weight: bold;
+  text-align: center;
+  color: #000;
+  background-color: transparent;
+  transition: 0.3s transform;
+}
+
+.projects__link:hover {
+  transform: translateY(-2px);
+}

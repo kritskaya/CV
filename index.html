@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.ico">
+  <link
+    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Roboto:wght@400;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/media.css" />
+  <title>My CV</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="burger">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </div>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About Me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#education" class="nav__link">Education</a>
+          </li>
+          <li class="nav__item">
+            <a href="#language" class="nav__link">Languages</a>
+          </li>
+          <li class="nav__item">
+            <a href="#technologies" class="nav__link">Technologies</a>
+          </li>
+          <li class="nav__item">
+            <a href="#projects" class="nav__link">Projects</a>
+          </li>
+        </ul>
+        <img class="nav__close-btn" src="./assets/icons/close.png" alt="close">
+      </nav>
+      
+    </header>
+    <main class="main">
+      <section class="hero">
+        <div class="hero__title">
+          <p class="hero__intro">Hello, I'm</p>
+          <h1 class="hero__name">Tatyana Kritskaya</h1>
+          <p class="hero__description">Front-End Developer</p>
+        </div>
+        <div class="hero__photo">
+          <img class="hero__img" src="./assets/images/avatar.jpg" alt="avatar" />
+        </div>
+        <div class="hero__contacts">
+          <ul class="contacts">
+            <li class="contacts__item">
+              <img class="contacts__img" src="./assets/icons/linkedin.png" alt="linkedin" />
+              <a href="https://www.linkedin.com/in/tatyana-kritskaya-a236821a0/"
+                class="contacts__link">linkedin.com</a>
+            </li>
+            <li class="contacts__item">
+              <img class="contacts__img" src="./assets/icons/email.png" alt="email" />
+              <span class="contacts__text">kritskaya.tatyana@gmail.com</span>
+            </li>
+            <li class="contacts__item">
+              <img class="contacts__img" src="./assets/icons/github.png" alt="github" />
+              <a class="contacts__link" href="https://github.com/kritskaya">https://github.com/kritskaya</a>
+            </li>
+            <li class="contacts__item">
+              <img class="contacts__img" src="./assets/icons/telegram.png" alt="telegram" />
+              <span class="contacts__text">kritskaya_t</span>
+            </li>
+            <li class="contacts__item">
+              <img class="contacts__img" src="./assets/icons/discord.png" alt="discord" />
+              <span class="contacts__text">kritskaya#5623</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <h2 class="section-header">About Me</h2>
+        <p class="about__text">My name is Tatyana. </p>
+        <p class="about__text">I've interested in programming since
+        school. And now when I have a some experience in front-end I want to be a part of development cool projects where I can grow and continue to learn from other experienced team members.</p>
+        <p class="about__text">My main soft skills are: responsibility, communication, team work, critical mind.</p>
+      </section>
+      <section class="education" id="education">
+        <h2 class="section-header">Education and Courses</h2>
+        <ul class="education__list">
+          <li class="education__item">
+            <div class="education__year">2001-2005</div>
+            <div class="education__description">
+              <p class="education__text">Vitebsk State Politechnic College</p>
+              <p class="education__text">(Programming CAD Systems)</p>
+            </div>
+          </li>
+          <li class="education__item">
+            <div class="education__year">2005-2011</div>
+            <div class="education__description">
+              <p class="education__text">Vitebsk State University of Technology</p>
+              <p class="education__text">(Marketing faculty)</p>
+            </div>
+          </li>
+        </ul>
+        <ul class="education__list">
+          <li class="education__item">
+            <span class="education__year">2021</span>
+            <div class="education__description">
+              <p class="education__text">Introduction To Java</p>
+              <p class="education__text">(EPAM Systems)</p>
+            </div>
+          </li>
+          <li class="education__item">
+            <span class="education__year">December, 2021 - March, 2022</span>
+            <div class="education__description">
+              <p class="education__text">JS / FRONT-END. STAGE 0 on RS School</p>
+              <a class="education__link" href="https://app.rs.school/certificate/uad21avf">Certificate</a>
+            </div>
+          </li>
+          <li class="education__item">
+            <span class="education__year">March, 2022 - September, 2022</span>
+            <div class="education__description">
+              <p class="education__text">JS / FRONT-END. RS School</p>
+              <a class="education__link" href="https://app.rs.school/certificate/g504qtj0">Certificate</a>
+            </div>
+          </li>
+          <li class="education__item">
+            <span class="education__year">September, 2022 - in progress</span>
+            <div class="education__description">
+              <p class="education__text">React. RS School</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="language" id="language">
+        <h2 class="section-header">Language</h2>
+        <ul class="language__list">
+          <li class="language__item">
+            <span class="language__name">Russian:</span>
+            <span class="language__description">Native</span>
+          </li>
+          <li class="language__item">
+            <span class="language__name">English acording to efset.org:</span>
+            <img class="language__img" src="./assets/images/efset-result.jpg" alt="english level">
+          </li>
+        </ul>
+      </section>
+      <section class="technologies" id="technologies">
+        <h2 class="section-header">Technologies</h2>
+        <ul class="technologies__list">
+          <li class="technologies__item">
+            <img class="technologies__img" src="./assets/icons/technologies/html.png" alt="html">
+            <p class="technologies__name">HTML</p>
+          </li>
+          <li class="technologies__item">
+            <img class="technologies__img" src="./assets/icons/technologies/css.png" alt="css">
+            <p class="technologies__name">CSS</p>
+          </li>
+          <li class="technologies__item">
+            <img class="technologies__img" src="./assets/icons/technologies/javascript.png" alt="js">
+            <p class="technologies__name">JavaScript</p>
+          </li>
+          <li class="technologies__item">
+            <img class="technologies__img" src="./assets/icons/technologies/typescript.png" alt="ts">
+            <p class="technologies__name">TypeScript</p>
+          </li>
+          <li class="technologies__item">
+            <img class="technologies__img" src="./assets/icons/technologies/sass.png" alt="sass">
+            <p class="technologies__name">Sass</p>
+          </li>
+          <li class="technologies__item">
+            <img class="technologies__img" src="./assets/icons/technologies/webpack.png" alt="webpack">
+            <p class="technologies__name">Webpack</p>
+          </li>
+          <li class="technologies__item">
+            <img class="technologies__img" src="./assets/icons/technologies/rest.png" alt="rest api">
+            <p class="technologies__name">Rest API</p>
+          </li>
+          <li class="technologies__item">
+            <img class="technologies__img" src="./assets/icons/technologies/sql.png" alt="sql">
+            <p class="technologies__name">SQL</p>
+          </li>
+          <li class="technologies__item">
+            <img class="technologies__img" src="./assets/icons/technologies/git.png" alt="git">
+            <p class="technologies__name">Git</p>
+          </li>
+          <li class="technologies__item">
+            <img class="technologies__img" src="./assets/icons/technologies/vs-code.png" alt="vs code">
+            <p class="technologies__name">VS Code</p>
+          </li>
+        </ul>
+      </section>
+      <section class="projects" id="projects">
+        <h2 class="section-header">Projects</h2>
+        <ul class="projects__list">
+          <li class="projects__item">
+            <img class="projects__img" src="./assets/images/projects/portfolio-project.jpg" alt="project">
+            <div class="projects__content">
+              <h3 class="projects__name">Portfolio</h3>
+              <div class="projects__technologies">
+                <h4>Used technologies:</h4>
+                <p>HTML, CSS, JS</p>
+              </div>
+              <div class="projects__description">
+                <p>Main features:</p>
+                <p>- adaptive for tablet and mobile devices</p>
+                <p>- project has theme switch button</p>
+                <p>- language menu</p>
+                <p>- last user selection restored after reload</p>
+              </div>
+              <div class="projects__links">
+                <a class="projects__link" href="https://kritskaya.github.io/rs-school-stage0/portfolio/">Deploy</a>
+                <a class="projects__link" href="https://kritskaya.github.io/rs-school-stage0/portfolio/">Code</a>
+              </div>
+            </div>
+          </li>
+          <li class="projects__item">
+            <img class="projects__img" src="./assets/images/projects/shelter-project.jpg" alt="project">
+            <div class="projects__content">
+              <h3 class="projects__name">Shelter</h3>
+              <div class="projects__technologies">
+                <h4>Used technologies:</h4>
+                <p>HTML, CSS, JS</p>
+              </div>
+              <div class="projects__description">
+                <p>Main features:</p>
+                <p>- adaptive for tablet and mobile devices</p>
+                <p>- project has slider</p>
+                <p>- project has pagination (on pets page)</p>
+              </div>
+              <div class="projects__links">
+                <a class="projects__link"
+                  href="https://kritskaya.github.io/rs-school-stage1-2/shelter/pages/main/index.html">Deploy</a>
+                <a class="projects__link" href="https://github.com/kritskaya/rs-school-stage1-2/tree/shelter/shelter">Code</a>
+              </div>
+            </div>
+          </li>
+          <li class="projects__item">
+            <img class="projects__img" src="./assets/images/projects/audio-player.jpg" alt="project">
+            <div class="projects__content">
+              <h3 class="projects__name">Audio player</h3>
+              <div class="projects__technologies">
+                <h4>Used technologies:</h4>
+                <p>HTML, CSS, JS</p>
+              </div>
+              <div class="projects__description">
+                <p>Main features:</p>
+                <p>- pause/play audio track</p>
+                <p>- go to next/previous track</p>
+                <p>- all tracks are in the playlist</p>
+              </div>
+              <div class="projects__links">
+                <a class="projects__link" href="https://kritskaya.github.io/rs-school-stage0/js30-audio-player/">Deploy</a>
+                <a class="projects__link" href="https://github.com/kritskaya/rs-school-stage0/tree/js30-audio-player">Code</a>
+              </div>
+            </div>
+          </li>
+          <li class="projects__item">
+            <img class="projects__img" src="./assets/images/projects/memory-game.jpg" alt="project">
+            <div class="projects__content">
+              <h3 class="projects__name">Memory game</h3>
+              <div class="projects__technologies">
+                <h4>Used technologies:</h4>
+                <p>HTML, CSS, JS</p>
+              </div>
+              <div class="projects__description">
+                <p>Main features:</p>
+                <p>- studing in RS School was an inspiration for the game cards images.</p>
+                <p>- the game has a last 10 games result table</p>
+              </div>
+              <div class="projects__links">
+                <a class="projects__link" href="https://kritskaya.github.io/rs-school-stage0/js30-memory-game/">Deploy</a>
+                <a class="projects__link" href="https://github.com/kritskaya/rs-school-stage0/tree/js30-memory-game">Code</a>
+              </div>
+            </div>
+          </li>
+          <li class="projects__item">
+            <img class="projects__img" src="./assets/images/projects/virtual-keyboard.jpg" alt="project">
+            <div class="projects__content">
+              <h3 class="projects__name">Virtual Keyboard</h3>
+              <div class="projects__technologies">
+                <h4>Used technologies:</h4>
+                <p>HTML, CSS, JS</p>
+              </div>
+              <div class="projects__description">
+                <p>Main features:</p>
+                <p>- all keys works like on a real keyboard.</p>
+                <p></p>- use Ctrl+ Shift for switching to another language</p>
+              </div>
+              <div class="projects__links">
+                <a class="projects__link" href="https://kritskaya.github.io/virtual-keyboard/">Deploy</a>
+                <a class="projects__link" href="https://github.com/kritskaya/virtual-keyboard">Code</a>
+              </div>
+            </div>
+          </li>
+          <li class="projects__item">
+            <img class="projects__img" src="./assets/images/projects/online-store.JPG" alt="project">
+            <div class="projects__content">
+              <h3 class="projects__name">Online-Store</h3>
+              <div class="projects__technologies">
+                <h4>Used technologies:</h4>
+                <p>HTML, CSS, JS</p>
+              </div>
+              <div class="projects__description">
+                <p>Main features:</p>
+                <p>- adaptive for tablet and mobile devices</p>
+                <p>- search bar</p>
+                <p>- store cart</p>
+                <p>- various filters</p>
+              </div>
+              <div class="projects__links">
+                <a class="projects__link" href="https://kritskaya.github.io/rs-school-stage1-2/online-store/">Deploy</a>
+                <a class="projects__link" href="https://github.com/kritskaya/rs-school-stage1-2/tree/online-store/online-store">Code</a>
+              </div>
+            </div>
+          </li>
+          <li class="projects__item">
+            <img class="projects__img" src="./assets/images/projects/rs-lang.JPG" alt="project">
+            <div class="projects__content">
+              <h3 class="projects__name">EasyLang</h3>
+              <div class="projects__technologies">
+                <h4>Used technologies:</h4>
+                <p>React, TypeScript</p>
+              </div>
+              <div class="projects__description">
+                <p>My contribution to the project:</p>
+                <p>- design and logic of the textbook page</p>
+                <p>- design and logic of the statistics page</p>
+                <p>- burger menu</p>
+              </div>
+              <div class="projects__links">
+                <a class="projects__link" href="https://rslang-andrewkarev.netlify.app/">Deploy</a>
+                <a class="projects__link" href="https://github.com/andrewkarev/rslang">Code</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__copyright">© 2022 Tatyana Kritskaya</div>
+    </footer>
+  </div>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
